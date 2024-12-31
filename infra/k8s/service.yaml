@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: project1-coll-5d8cd9a347cb40178b05918368118a4f-srv
+spec:
+  selector:
+    app: project1-coll-5d8cd9a347cb40178b05918368118a4f
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9026
+  type: ClusterIP
